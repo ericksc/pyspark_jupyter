@@ -1,0 +1,8 @@
+services:
+  spark:
+    image: ericksc/pyspark:latest
+    container_name: spark
+    ports:
+      - "9999:8888"
+    volumes:
+      - ./spark_v:/app
